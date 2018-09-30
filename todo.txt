@@ -1,0 +1,13 @@
+ideas:
+open a list of programs
+
+
+files:
+find files via extension, date, name, folder
+delete, copy, move them
+have multiple .bat files for this. one file that contorls them all
+ex: delete files older than a certain date
+ex: move files of a type from a folder to a folder
+ex: delete tmp files
+
+

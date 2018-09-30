@@ -1,11 +1,25 @@
 @echo off
 title Util Script
 
-:Top
+:: log date, time, user
+echo %time% %date% %username% >> log.txt
 color 0
-set uinput = ""
+echo Welcome %username%! It is %time% on %date%.
+
+
+
+:Top
+
 echo What would you like to do?
-set /p uinput= "'system' for system info, 'tasks' for a list of tasks, 'net' for network stats, 'ip' for ip info, 'driver' for info on your drivers, or type 'quit' to quit:    "
+echo     'system' for system info
+echo     'tasks' for a list of tasks
+echo     'net' for network stats
+echo     'ip' for ip info
+echo     'driver' for info on your drivers
+echo     'quit' to quit (or ctrl+c)
+
+set uinput = ""
+set /p uinput= " "
 
 if "%uinput%"=="quit" (
 	echo Quitting...
